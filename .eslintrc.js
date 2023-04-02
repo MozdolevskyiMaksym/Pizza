@@ -11,11 +11,13 @@ module.exports = {
     jest: true,
   },
   extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'prettier',
   ],
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {
@@ -23,7 +25,7 @@ module.exports = {
     },
     ecmaVersion: 12,
   },
-  plugins: ['babel', 'react', 'react-hooks', 'prettier'],
+  plugins: ['@typescript-eslint', 'babel', 'react', 'react-hooks', 'prettier'],
   rules: {
     semi: ['warn', 'always'],
     quotes: ['error', 'single'],
@@ -31,6 +33,5 @@ module.exports = {
     'object-curly-spacing': [1, 'always'],
     'no-multiple-empty-lines': [2, { max: 2 }],
     'no-console': 'warn',
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
   },
 };
