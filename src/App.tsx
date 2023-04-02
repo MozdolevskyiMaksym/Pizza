@@ -1,7 +1,12 @@
 import React from 'react';
+import RootLayout from './shared/components/layouts/root-layout/root-layout';
 
 const App = () => {
-  return <div>Pizza App</div>;
+  return (
+    <RootLayout>
+      <div>Pizza App</div>
+    </RootLayout>
+  );
 };
 
 export default App;

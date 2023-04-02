@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "paths": {
-      "*": ["src/*"]
-    },
     "baseUrl": ".",
+    "paths": {
+      "*": ["*", "types/*"],
+      "@/*": ["./src/*"]
+    },
     "target": "es6",
     "module": "es2015",
     "moduleResolution": "node",
@@ -31,6 +32,6 @@
     "lib": ["es5", "es6", "es7", "es2017", "es2019", "dom"],
     "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["src/**/*"],
+  "include": ["./src/**/*", "types/**/*"],
   "exclude": ["node_modules/**"]
 }
