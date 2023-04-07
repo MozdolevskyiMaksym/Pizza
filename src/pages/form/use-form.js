@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { useEffect, useState } from 'react';
+import DOMPurify from 'dompurify';
 
 import { emailRegexp, nameRegexp } from '../../utils/regex';
 
@@ -7,7 +8,7 @@ const useForm = () => {
   const [formData, setFormData] = useState(() => {
     // Ищем данные в localStorage и возвращаем их если они есть
     const storedData = localStorage.getItem('formData');
-    console.log('storedData: ', storedData);
+
     return storedData
       ? JSON.parse(storedData)
       : {
@@ -26,10 +27,10 @@ const useForm = () => {
   }, [formData]);
 
   const handleInputChange = (event) => {
-    const { value, dataset } = event.target;
-    const { name } = dataset;
+    const { name } = event.target.dataset;
+    const sanitizedValue = DOMPurify.sanitize(event.target.value);
 
-    setFormData((prevState) => ({ ...prevState, [name]: value }));
+    setFormData((prevState) => ({ ...prevState, [name]: sanitizedValue }));
   };
 
   const handleSubmit = (event) => {
