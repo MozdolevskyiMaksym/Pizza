@@ -9,6 +9,7 @@ import './app.scss';
 import './shared/styles/variables.scss';
 import AdditionalComponents from './pages/additional-components/additional-components';
 import FileReader from './pages/file-reader/file-reader';
+import MathMethods from './pages/math-methods/math-methods';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/form" element={<FormPage />} />
         <Route path="/components" element={<AdditionalComponents />} />
         <Route path="/file-reader" element={<FileReader />} />
+        <Route path="/math-methods" element={<MathMethods />} />
       </Routes>
     </div>
   );
