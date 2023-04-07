@@ -1,0 +1,32 @@
+.filter-container {
+  display: flex;
+  justify-content: center;
+  .filter-item {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    background: #ffffff;
+    border: 2px solid #e8e8e8;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    height: 60px;
+    min-width: 180px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s all ease;
+    &:hover {
+      color: #fff;
+      background: var(--green);
+      border: 2px solid var(--green);
+    }
+    &.active {
+      color: #fff;
+      opacity: 0.5;
+      background: var(--green);
+      border: 2px solid var(--green);
+    }
+  }
+}

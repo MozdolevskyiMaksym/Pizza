@@ -1,0 +1,117 @@
+.header {
+  box-sizing: border-box;
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%);
+  transition: 0.3s all ease;
+  height: 90px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  &.fix-header {
+    position: fixed;
+    height: 90px;
+    box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%);
+    .logo {
+      img {
+        width: 50px;
+        height: 50px;
+        top: 3px;
+      }
+    }
+  }
+  .logo {
+    position: relative;
+    img {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      top: 10px;
+      object-fit: contain;
+      z-index: 9;
+      transition: 0.3s all ease;
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item {
+    margin: 0 30px;
+  }
+  &__link {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    &:hover {
+      color: var(--orange);
+    }
+  }
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  .header-link {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 24px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    &:hover {
+      color: var(--orange);
+    }
+  }
+}
+
+.header-basket {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #333333;
+  margin-left: 20px;
+  img {
+    width: 28px;
+    height: 24px;
+    margin-right: 9px;
+  }
+  &__calck {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 13px;
+    top: -10px;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    border-radius: 50%;
+  }
+}
