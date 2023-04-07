@@ -1,0 +1,2 @@
+export const FETCH_PIZZA = 'FETCH_PIZZA';
+export const FETCH_PIZZA_SUCCESS = 'FETCH_PIZZA_SUCCESS';

@@ -34,5 +34,6 @@ module.exports = {
     'no-multiple-empty-lines': [2, { max: 2 }],
     'no-console': 'warn',
     '@typescript-eslint/no-var-requires': 0,
+    'react/prop-types': 'off',
   },
 };
