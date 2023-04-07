@@ -12,6 +12,8 @@ import FileReader from './pages/file-reader/file-reader';
 import MathMethods from './pages/math-methods/math-methods';
 import NonLinearData from './pages/non-linear-data/non-linear-data';
 import LinearData from './pages/linear-data/linear-data';
+import PortalUsage from './pages/portal-usage/portal-usage';
+import RenderPropsUsage from './pages/render-props-usage/render-props-usage';
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
         <Route path="/math-methods" element={<MathMethods />} />
         <Route path="/non-linear-data" element={<NonLinearData />} />
         <Route path="/linear-data" element={<LinearData />} />
+        <Route path="/portal-usage" element={<PortalUsage />} />
+        <Route path="/render-props-usage" element={<RenderPropsUsage />} />
       </Routes>
     </div>
   );
