@@ -11,6 +11,11 @@
   transition: background-color 0.2s ease-in-out;
 
   &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     color: black;
   }
