@@ -1,7 +1,27 @@
 import React from 'react';
 import useFileReader from './use-file-reader';
+import styled from 'styled-components';
 
 import './file-reader.scss';
+
+const StyledButton = styled.button`
+  border: none;
+  border-radius: 4px;
+  background-color: ${(props) => props.backgroundColor};
+  color: ${(props) => props.color};
+  font-size: 16px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: ${(props) => props.hoverBackgroundColor};
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(92, 92, 214, 0.4);
+  }
+`;
 
 const FileReader = () => {
   const {
@@ -44,8 +64,22 @@ const FileReader = () => {
           />
         </label>
         <div className="button-group">
-          <button onClick={handleCreateFile}>Create File</button>
-          <button onClick={handleReadFile}>Read File</button>
+          <StyledButton
+            onClick={handleCreateFile}
+            backgroundColor="#5c5cd6"
+            color="#fff"
+            hoverBackgroundColor="#4343c3"
+          >
+            Create File
+          </StyledButton>
+          <StyledButton
+            onClick={handleReadFile}
+            backgroundColor="#5c5cd6"
+            color="#fff"
+            hoverBackgroundColor="#4343c3"
+          >
+            Read File
+          </StyledButton>
         </div>
       </div>
     </div>

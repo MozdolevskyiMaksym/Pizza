@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import PizzaPage from './pages/pizza/pizza';
 import LoopControlComponent from './pages/loop-control/loop-control';
