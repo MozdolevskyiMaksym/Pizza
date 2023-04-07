@@ -8,7 +8,7 @@ import {
   openBasketModalStatus,
 } from '../../../redux/actions/basket-actions';
 
-const UseHeader = () => {
+const useHeader = () => {
   const headerNameClass = `header ${useScrollHandler()}`;
   const basketDataItems = useSelector((state) => state.basket.basketData);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,4 +40,4 @@ const UseHeader = () => {
   };
 };
 
-export default UseHeader;
+export default useHeader;
