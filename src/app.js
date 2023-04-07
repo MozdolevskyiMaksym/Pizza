@@ -7,6 +7,8 @@ import FormPage from './pages/form/form';
 
 import './app.scss';
 import './shared/styles/variables.scss';
+import AdditionalComponents from './pages/additional-components/additional-components';
+import FileReader from './pages/file-reader/file-reader';
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="/" element={<PizzaPage />} />
         <Route path="/loop-control" element={<LoopControlComponent />} />
         <Route path="/form" element={<FormPage />} />
+        <Route path="/components" element={<AdditionalComponents />} />
+        <Route path="/file-reader" element={<FileReader />} />
       </Routes>
     </div>
   );
