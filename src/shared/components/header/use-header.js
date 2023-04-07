@@ -19,6 +19,7 @@ const useHeader = () => {
     { name: 'Піца', path: '/' },
     { name: 'Form', path: '/form' },
     { name: 'Loop control', path: '/loop-control' },
+    { name: 'Components', path: '/components' },
   ];
 
   const openModal = () => {

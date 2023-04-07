@@ -1,4 +1,4 @@
-// export class IndexedDB {
+// class IndexedDBStorage {
 //   constructor(databaseName, storeName) {
 //     // Open connection to IndexedDB
 //     this.dbPromise = window.indexedDB.open(databaseName);
@@ -96,7 +96,7 @@
 //   }
 // }
 
-export class IndexedDBStorage {
+class IndexedDBStorage {
   constructor(dbName, storeName) {
     this.dbName = dbName;
     this.storeName = storeName;
@@ -169,3 +169,5 @@ export class IndexedDBStorage {
     });
   }
 }
+
+export default IndexedDBStorage;
