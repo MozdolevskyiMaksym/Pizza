@@ -1,6 +1,6 @@
 import React from 'react';
 
-import UsePizzaPage from './use-pizza';
+import usePizzaPage from './use-pizza';
 import PizzaFilter from './components/pizza-filter/pizza-filter';
 import Card from '../../shared/components/card/card';
 
@@ -8,7 +8,7 @@ import './pizza.scss';
 
 const PizzaPage = () => {
   const { pizzasData, filteredPizzasData, setFilteredPizzasData } =
-    UsePizzaPage();
+    usePizzaPage();
 
   const renderCard = () =>
     filteredPizzasData.map((item) => {

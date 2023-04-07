@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import UseHeader from './use-header';
+import useHeader from './use-header';
 import ModalComponent from '../modal/modal-component';
 import ModalBasket from '../modal/modal-basket';
 import ButtonComponent from '../button/button';
@@ -21,7 +21,7 @@ const Header = () => {
     openBasketModal,
     closeBasketModal,
     openModal,
-  } = UseHeader();
+  } = useHeader();
 
   return (
     <>

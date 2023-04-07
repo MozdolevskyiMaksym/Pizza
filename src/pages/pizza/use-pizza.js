@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import useActions from '../../shared/hooks/use-actions';
 import { fetchPizza } from './actions/actions';
 
-const UsePizzaPage = () => {
+const usePizzaPage = () => {
   const pizzasData = useSelector((state) => state?.pizza?.data);
   const getPizza = useActions(fetchPizza);
   const [filteredPizzasData, setFilteredPizzasData] = useState(pizzasData);
@@ -23,4 +23,4 @@ const UsePizzaPage = () => {
   };
 };
 
-export default UsePizzaPage;
+export default usePizzaPage;
