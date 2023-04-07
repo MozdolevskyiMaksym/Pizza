@@ -10,7 +10,6 @@ import {
   CLOSE_BASKET_MODAL_STATUS,
   CLOSE_BASKET_MODAL_STATUS_SUCCESS,
   ADD_SUCCESS_ALERT,
-  ADD_ERROR_ALERT,
 } from './action-types';
 import { all, call, fork, put, takeEvery } from 'redux-saga/effects';
 import ApiService from '../../shared/helpers/api-service/api-service';
@@ -56,14 +55,13 @@ function* addProductToBasketWorker(dataProduct) {
       },
     });
   } catch (error) {
-    yield put({
-      type: ADD_ERROR_ALERT,
-      payload: {
-        type: 'error',
-        message: ` ${dataProduct.payload.product.title} вже корзині`,
-        key: Math.random(),
-      },
-    });
+    const customError = new Error(
+      'Произошла ошибка при добавлении продукта в корзину'
+    );
+    throw customError;
+
+    // Здесь я создал новый объект ошибки customError и затем "бросил" его с помощью ключевого слова throw.
+    // Это позволяет обработать эту ошибку с помощью блока catch внешней функции.
   }
 }
 
