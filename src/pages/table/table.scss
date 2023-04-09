@@ -1,0 +1,55 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+caption {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+tfoot td {
+  font-style: italic;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+td[colspan='2'] {
+  font-style: italic;
+  text-align: center;
+}

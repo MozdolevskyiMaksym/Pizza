@@ -57,6 +57,12 @@
     cursor: pointer;
     position: relative;
     text-transform: uppercase;
+    &:visited {
+      color: purple;
+    }
+    &:active {
+      background-color: #ccc;
+    }
     &:hover {
       color: var(--orange);
     }

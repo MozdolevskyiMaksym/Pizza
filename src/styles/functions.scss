@@ -1,0 +1,11 @@
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+@function get-text-color($bg-color) {
+  @if (lightness($bg-color) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}

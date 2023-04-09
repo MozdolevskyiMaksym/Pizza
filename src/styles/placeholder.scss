@@ -1,0 +1,8 @@
+// Placeholder selector
+%button-hover {
+  &:hover {
+    background-color: #ff4081;
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+}
