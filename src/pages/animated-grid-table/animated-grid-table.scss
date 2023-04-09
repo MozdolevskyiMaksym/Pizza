@@ -1,0 +1,78 @@
+.GridTable {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  margin: 150px 50px 50px;
+  width: calc(100vw - 100px);
+  height: calc(100vh - 200px);
+  overflow: hidden;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    margin: 50px;
+    height: calc(100vh - 100px);
+
+    .GridTable-cell {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-height: 1000px) and (orientation: landscape) {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 100px;
+    height: calc(100vh - 200px);
+
+    .GridTable-cell {
+      font-size: 40px;
+    }
+
+    .GridTable-row:nth-child(2) .GridTable-cell:nth-child(2) {
+      background-color: #b71540;
+    }
+
+    .GridTable-row:nth-child(2) .GridTable-cell:nth-child(3) {
+      background-color: #fdcb6e;
+    }
+
+    .GridTable-row:nth-child(3) .GridTable-cell:nth-child(2) {
+      background-color: #55efc4;
+    }
+
+    .GridTable-row:nth-child(3) .GridTable-cell:nth-child(3) {
+      background-color: #81ecec;
+    }
+
+    .GridTable-cell:hover {
+      transform: scale(1.5) rotate(360deg);
+    }
+  }
+}
+
+.GridTable-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+.GridTable-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: #2e86de;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}

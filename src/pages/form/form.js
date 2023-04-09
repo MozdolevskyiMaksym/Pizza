@@ -20,9 +20,17 @@ const FormPage = () => {
     handleInputChange,
   } = useForm();
 
+  // enctype - указывает тип кодирования, используемый для отправки данных формы, который может быть application/x-www-form-urlencoded,
+  // multipart/form-data, или text/plain. Например, если вы хотите отправить файлы с помощью этой формы,
+  // вы можете установить этот атрибут в multipart/form-data:
+
   return (
     <div className="form-container">
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        autoComplete="off"
+        encType="multipart/form-data"
+      >
         <div className="form-column">
           <label>
             First Name:
