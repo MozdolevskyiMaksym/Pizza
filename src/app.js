@@ -21,6 +21,10 @@ import TransformsAndTransitions from './pages/transforms-transitions/transforms-
 import AnimatedGridTable from './pages/animated-grid-table/animated-grid-table';
 import Contacts from './pages/responsive-form/responsive-form';
 import IframeUsage from './pages/iframe-usage/iframe-usage';
+import TimeZoneConverter from './pages/time-zone-converter/time-zone-converter';
+import FormikSanitizingData from './pages/formik-sanitizing-data/formik-sanitizing-data';
+import IndexDBTool from './pages/index-db-tools/index-db-tool';
+import StorageTools from './pages/storage-tools/storage-tools';
 
 const App = () => {
   return (
@@ -46,6 +50,13 @@ const App = () => {
         <Route path="/animated-grid-table" element={<AnimatedGridTable />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/iframe" element={<IframeUsage />} />
+        <Route path="/time-zone-converter" element={<TimeZoneConverter />} />
+        <Route
+          path="/formik-sanitizing-data"
+          element={<FormikSanitizingData />}
+        />
+        <Route path="/index-db-tool" element={<IndexDBTool />} />
+        <Route path="/storage-tools" element={<StorageTools />} />
       </Routes>
     </div>
   );

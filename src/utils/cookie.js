@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-non-literal-regexp */
 export class Cookie {
   static set(cname, cvalue, exdays) {
     const currentDay = new Date();

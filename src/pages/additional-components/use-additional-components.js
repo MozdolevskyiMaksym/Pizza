@@ -13,6 +13,10 @@ const useAdditionalComponents = () => {
     { name: 'Animated Grid Table', path: 'animated-grid-table' },
     { name: 'Responsive Form', path: 'contacts' },
     { name: 'Iframe usage', path: 'iframe' },
+    { name: 'Time zone converter', path: 'time-zone-converter' },
+    { name: 'Formik - sanitizing data', path: 'formik-sanitizing-data' },
+    { name: 'IndexDB Tool', path: 'index-db-tool' },
+    { name: 'Storage Tools', path: 'storage-tools' },
   ];
   return {
     components,
