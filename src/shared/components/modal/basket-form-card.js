@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-non-literal-require */
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';

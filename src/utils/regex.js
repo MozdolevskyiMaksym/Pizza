@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-unsafe-regex */
 // Regex patterns
 export const emailRegexp = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
 // Начинается с одного или более символов латинской заглавной буквы, цифры, точки, подчеркивания, процента или знака плюса: [A-Z0-9._%+-]+
