@@ -1,5 +1,8 @@
+import { getMapMethod } from '../../shared/helpers/polyfills/polyfills';
+
 const useAdditionalComponents = () => {
   const components = [
+    { name: 'Loop control', path: 'loop-control' },
     { name: 'File Reader', path: 'file-reader' },
     { name: 'Math methods', path: 'math-methods' },
     { name: 'Linear data', path: 'linear-data' },
@@ -17,7 +20,19 @@ const useAdditionalComponents = () => {
     { name: 'Formik - sanitizing data', path: 'formik-sanitizing-data' },
     { name: 'IndexDB Tool', path: 'index-db-tool' },
     { name: 'Storage Tools', path: 'storage-tools' },
+    { name: 'File uploader', path: 'file-uploader' },
+    { name: 'Image uploader', path: 'image-uploader' },
+    { name: 'Image uploader 2', path: 'image-uploader-2' },
+    { name: 'Immutability example', path: 'immutability-example' },
+    { name: 'Underscore', path: 'underscore' },
+    { name: 'Compatibility', path: 'compatibility' },
+    { name: 'Polyfills', path: 'polyfills' },
   ];
+
+  if (!Array.prototype.includes) {
+    getMapMethod();
+  }
+
   return {
     components,
   };

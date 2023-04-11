@@ -1,11 +1,13 @@
+@import './variables.scss';
+
 @mixin transform-transition-button-styles {
   display: inline-block;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  border: 2px solid #ff4081;
-  color: #ff4081;
+  border: 2px solid $transition-button-color;
+  color: $transition-button-color;
   background-color: transparent;
   border-radius: 5px;
   margin: 10px;

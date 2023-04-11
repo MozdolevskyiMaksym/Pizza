@@ -1,10 +1,20 @@
-import React from 'react';
+/* eslint-disable no-console */
+import React, { useRef } from 'react';
+
 import './iframe.scss';
 
 const Iframe = ({ title, src }) => {
+  const iframeRef = useRef(null);
+
   return (
     <div className="iframe-container">
-      <iframe title={title} src={src} frameBorder="0" allowfullscreen></iframe>
+      <iframe
+        ref={iframeRef}
+        title={title}
+        src={src}
+        frameBorder="0"
+        allowfullscreen
+      ></iframe>
     </div>
   );
 };
