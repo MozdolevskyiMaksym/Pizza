@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .form {
   display: flex;
   justify-content: center;
@@ -44,7 +46,7 @@
     font-size: 18px;
     border-radius: 5px;
     border: none;
-    background-color: #007bff;
+    background-color: $primary-color;
     color: #fff;
     cursor: pointer;
   }

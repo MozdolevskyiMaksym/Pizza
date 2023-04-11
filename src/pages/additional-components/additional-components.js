@@ -8,7 +8,7 @@ const AdditionalComponents = () => {
   const { components } = useAdditionalComponents();
 
   return (
-    <div className="components">
+    <div className="additional-components">
       {components.map((item) => (
         <AdditionalComponentsCard item={item} key={item} />
       ))}

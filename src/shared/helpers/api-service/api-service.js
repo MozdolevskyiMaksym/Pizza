@@ -1,4 +1,5 @@
 import axios from 'axios';
+import 'regenerator-runtime/runtime';
 import { BASE_URL } from './config.js';
 class ApiService {
   static sendRequest = async (url, method, data = null, headers = {}) => {

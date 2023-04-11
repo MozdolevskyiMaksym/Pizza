@@ -4,9 +4,6 @@ import { Route, Routes } from 'react-router-dom';
 import PizzaPage from './pages/pizza/pizza';
 import LoopControlComponent from './pages/loop-control/loop-control';
 import FormPage from './pages/form/form';
-
-import './app.scss';
-import './shared/styles/variables.scss';
 import AdditionalComponents from './pages/additional-components/additional-components';
 import FileReader from './pages/file-reader/file-reader';
 import MathMethods from './pages/math-methods/math-methods';
@@ -25,6 +22,15 @@ import TimeZoneConverter from './pages/time-zone-converter/time-zone-converter';
 import FormikSanitizingData from './pages/formik-sanitizing-data/formik-sanitizing-data';
 import IndexDBTool from './pages/index-db-tools/index-db-tool';
 import StorageTools from './pages/storage-tools/storage-tools';
+import FileUploader from './pages/file-uploader/file-uploader';
+import ImageUploader from './pages/image-uploader/image-uploader';
+import ImmutabilityExample from './pages/emmutability-example/emmutability-example';
+import ImageUploader2 from './pages/image-uploader-2/image-uploader-2';
+import Underscore from './pages/underscore/underscore';
+import Compatibility from './pages/compatibility/compatibility';
+import Polyfills from './pages/polyfills/polyfils';
+
+import './app.scss';
 
 const App = () => {
   return (
@@ -57,6 +63,14 @@ const App = () => {
         />
         <Route path="/index-db-tool" element={<IndexDBTool />} />
         <Route path="/storage-tools" element={<StorageTools />} />
+        <Route path="/file-uploader" element={<FileUploader />} />
+        <Route path="/image-uploader" element={<ImageUploader />} />
+        <Route path="/image-uploader-2" element={<ImageUploader2 />} />
+        <Route path="/immutability-example" element={<ImmutabilityExample />} />
+        <Route path="/underscore" element={<Underscore />} />
+        <Route path="/compatibility" element={<Compatibility />} />
+        Polyfills
+        <Route path="/polyfills" element={<Polyfills />} />
       </Routes>
     </div>
   );

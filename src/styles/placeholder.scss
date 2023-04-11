@@ -1,7 +1,9 @@
+@import './variables.scss';
+
 // Placeholder selector
 %button-hover {
   &:hover {
-    background-color: #ff4081;
+    background-color: $transition-button-color;
     color: #ffffff;
     transform: translateY(-3px);
   }
