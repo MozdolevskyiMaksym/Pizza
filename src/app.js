@@ -24,7 +24,7 @@ import IndexDBTool from './pages/index-db-tools/index-db-tool';
 import StorageTools from './pages/storage-tools/storage-tools';
 import FileUploader from './pages/file-uploader/file-uploader';
 import ImageUploader from './pages/image-uploader/image-uploader';
-import ImmutabilityExample from './pages/emmutability-example/emmutability-example';
+import ImmutabilityExample from './pages/immutability-example/immutability-example';
 import ImageUploader2 from './pages/image-uploader-2/image-uploader-2';
 import Underscore from './pages/underscore/underscore';
 import Compatibility from './pages/compatibility/compatibility';
