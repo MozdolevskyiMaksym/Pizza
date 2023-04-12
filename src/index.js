@@ -6,9 +6,9 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './app';
 import store from './store';
 import reportWebVitals from './reportWebVitals';
+import RootLayout from './shared/hocs/root-layout/root-layout';
 
 import './index.css';
-import RootLayout from './shared/components/layouts/root-layout/root-layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
