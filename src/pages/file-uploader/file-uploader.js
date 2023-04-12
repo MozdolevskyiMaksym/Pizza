@@ -6,7 +6,7 @@ const FileUploader = () => {
   const { isDragActive, getInputProps, getRootProps } = useUploadFile();
 
   return (
-    <div {...getRootProps()} className="file-uploadere">
+    <div {...getRootProps()} className="file-uploader">
       <input {...getInputProps()} />
       {isDragActive ? (
         <p>Drop the files here</p>
