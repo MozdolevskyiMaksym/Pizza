@@ -27,6 +27,15 @@ const useAdditionalComponents = () => {
     { name: 'Underscore', path: 'underscore' },
     { name: 'Compatibility', path: 'compatibility' },
     { name: 'Polyfills', path: 'polyfills' },
+    { name: 'Builder pattern', path: 'builder-pattern' },
+    { name: 'Singleton pattern', path: 'singleton-pattern' },
+    { name: 'Facade pattern', path: 'facade-pattern' },
+    { name: 'Decorator pattern', path: 'decorator-pattern' },
+    {
+      name: 'Chain of responsibility pattern',
+      path: 'chain-of-responsibility-pattern',
+    },
+    { name: 'Command pattern', path: 'command-pattern' },
   ];
 
   if (!Array.prototype.includes) {
