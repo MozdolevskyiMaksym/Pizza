@@ -29,6 +29,12 @@ import ImageUploader2 from './pages/image-uploader-2/image-uploader-2';
 import Underscore from './pages/underscore/underscore';
 import Compatibility from './pages/compatibility/compatibility';
 import Polyfills from './pages/polyfills/polyfils';
+import BuilderPattern from './pages/builder-pattern/builder-pattern';
+import SingletonPattern from './pages/singleton-pattern/singleton-pattern';
+import FacadePattern from './pages/facade-pattern/facade-pattern';
+import DecoratorPattern from './pages/decorator-pattern/decorator-pattern';
+import ChainOfResponsibilityPattern from './pages/chain-of-responsibility-pattern/chain-of-responsibility-pattern';
+import CommandPattern from './pages/command-pattern/command-pattern';
 
 import './app.scss';
 
@@ -71,6 +77,18 @@ const App = () => {
         <Route path="/compatibility" element={<Compatibility />} />
         Polyfills
         <Route path="/polyfills" element={<Polyfills />} />
+        {/* Creational Patterns */}
+        <Route path="/builder-pattern" element={<BuilderPattern />} />
+        <Route path="/singleton-pattern" element={<SingletonPattern />} />
+        {/* Structural Patterns */}
+        <Route path="/facade-pattern" element={<FacadePattern />} />
+        <Route path="/decorator-pattern" element={<DecoratorPattern />} />
+        {/* Behavioral Patterns */}
+        <Route
+          path="chain-of-responsibility-pattern"
+          element={<ChainOfResponsibilityPattern />}
+        />
+        <Route path="/command-pattern" element={<CommandPattern />} />
       </Routes>
     </div>
   );
