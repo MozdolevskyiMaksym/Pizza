@@ -36,6 +36,9 @@ const useAdditionalComponents = () => {
       path: 'chain-of-responsibility-pattern',
     },
     { name: 'Command pattern', path: 'command-pattern' },
+    { name: 'Agregation', path: 'agregation' },
+    { name: 'Composition', path: 'composition' },
+    { name: 'Inheritance', path: 'inheritance' },
   ];
 
   if (!Array.prototype.includes) {

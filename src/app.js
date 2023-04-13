@@ -37,6 +37,9 @@ import ChainOfResponsibilityPattern from './pages/chain-of-responsibility-patter
 import CommandPattern from './pages/command-pattern/command-pattern';
 
 import './app.scss';
+import Agregation from './pages/agregation/agregation';
+import Composition from './pages/composition/composition';
+import DerivedComponent from './pages/inheritance/inheritance';
 
 const App = () => {
   return (
@@ -89,6 +92,10 @@ const App = () => {
           element={<ChainOfResponsibilityPattern />}
         />
         <Route path="/command-pattern" element={<CommandPattern />} />
+        {/*  */}
+        <Route path="/agregation" element={<Agregation />} />
+        <Route path="/composition" element={<Composition />} />
+        <Route path="/inheritance" element={<DerivedComponent />} />
       </Routes>
     </div>
   );
