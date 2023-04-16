@@ -39,6 +39,8 @@ const useAdditionalComponents = () => {
     { name: 'Agregation', path: 'agregation' },
     { name: 'Composition', path: 'composition' },
     { name: 'Inheritance', path: 'inheritance' },
+    { name: 'DomPurify', path: 'dom-purify' },
+    // { name: 'Dependency Vulnerability Checker', path: 'dependency-vulnerability-checker' },
   ];
 
   if (!Array.prototype.includes) {
