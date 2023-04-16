@@ -54,7 +54,7 @@ class Agregation extends React.Component {
   render() {
     return (
       <div className="agregation">
-        <h1>Counter App</h1>
+        <h1>Counter Application</h1>
         <Counter
           count={this.state.count}
           onIncrement={this.handleIncrement}
