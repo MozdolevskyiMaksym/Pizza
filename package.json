@@ -79,6 +79,7 @@
     "moment-timezone": "^0.5.43",
     "node-sass": "^7.0.3",
     "prettier": "^2.8.7",
+    "react-axe": "^3.5.4",
     "react-dropzone": "^14.2.3",
     "react-dropzone-uploader": "^2.11.0",
     "sass": "^1.60.0",
