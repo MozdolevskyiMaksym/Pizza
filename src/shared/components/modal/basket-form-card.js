@@ -48,9 +48,7 @@ const BasketFormCard = (props) => {
         <div className="counts">
           <label>Кількість {value}</label>
           <select value={value} onChange={handleChange}>
-            <option value="1" selected>
-              1
-            </option>
+            <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
@@ -59,7 +57,7 @@ const BasketFormCard = (props) => {
         </div>
 
         <div className="product-price">{updatedPrice} грн</div>
-        <div className="remove-item" onClick={() => deleteFromBasket(props)}>
+        <div className="remove-item" onClick={() => deleteFromBasket()}>
           Видалити
         </div>
       </div>

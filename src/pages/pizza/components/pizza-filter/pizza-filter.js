@@ -12,7 +12,7 @@ const PizzaFilter = ({ onSortPizza }) => {
   return (
     <MyContext.Consumer>
       {({ id }) => (
-        <div className="filter-container">
+        <ul className="filter-container">
           {tabs.map((tab) => (
             <li
               onClick={() => onFilterPizza(tab.category)}
@@ -22,7 +22,7 @@ const PizzaFilter = ({ onSortPizza }) => {
               {tab.name}
             </li>
           ))}
-        </div>
+        </ul>
       )}
     </MyContext.Consumer>
   );

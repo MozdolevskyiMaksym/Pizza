@@ -10,7 +10,7 @@ const AdditionalComponents = () => {
   return (
     <div className="additional-components">
       {components.map((item) => (
-        <AdditionalComponentsCard item={item} key={item} />
+        <AdditionalComponentsCard item={item} key={item.path} />
       ))}
     </div>
   );
