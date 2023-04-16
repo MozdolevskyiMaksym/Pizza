@@ -1,0 +1,44 @@
+# .github/workflows/audit.yml
+name: "Audit dependencies"
+on:
+  push:
+    branches:
+      - master
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm ci
+      - name: Audit dependencies
+        run: npm audit
+
+
+# name: "Audit dependencies" - задает имя для этого workflow, которое будет видно в GitHub Actions.
+
+# on: push: - указывает на то, что workflow будет запускаться автоматически при каждом push в репозиторий.
+
+# branches: - master - указывает на то, что workflow будет запускаться только при push в ветку master.
+
+# jobs: - определяет задачу, которую нужно выполнить.
+
+# audit: - название работы (job).
+
+# runs-on: ubuntu-latest - указывает на то, на какой операционной системе будет выполняться задача. В данном случае используется последняя версия Ubuntu.
+
+# steps: - шаги, которые нужно выполнить в рамках задачи.
+
+# name: Checkout code - название шага, который проверяет код из репозитория.
+
+# uses: actions/checkout@v2 - использует готовый action, который клонирует репозиторий и переключается на нужную ветку.
+
+# name: Install dependencies - название шага, который устанавливает зависимости.
+
+# run: npm ci - выполняет команду установки зависимостей с помощью npm.
+# Опция ci означает, что нужно использовать package-lock.json для точной установки зависимостей,что повышает стабильность сборки.
+
+# name: Audit dependencies - название шага, который проверяет зависимости.
+
+# run: npm audit - выполняет команду проверки зависимостей на наличие уязвимостей с помощью npm.

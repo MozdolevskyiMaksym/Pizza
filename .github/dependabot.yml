@@ -1,0 +1,39 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  # Enable version updates for npm packages
+  - package-ecosystem: "npm"
+    # Look for updates to the "dependencies" and "devDependencies" keys
+    directory: "/"
+    schedule:
+      # Check for updates every weekday
+      interval: "daily"
+    # Limit updates to only minor and patch releases
+    # (i.e. allow 1.x.x and 1.1.x but not 2.x.x)
+    allow:
+      - dependency-type: "direct"
+        update-type: "minor"
+      - dependency-type: "direct"
+        update-type: "patch"
+
+
+        Этот файл .github/dependabot.yml содержит настройки для Dependabot, инструмента автоматического обновления зависимостей в проекте на GitHub. Каждая строка отвечает за определенную настройку:
+
+# version: 2 - указывает версию Dependabot-конфигурации, которую мы используем (в данном случае - вторую версию).
+
+# updates: - определяет список обновлений, которые Dependabot будет применять к проекту.
+
+# - package-ecosystem: "npm" - указывает, что мы хотим использовать NPM как систему управления пакетами для проекта.
+
+# directory: "/" - указывает путь к файлу зависимостей. В данном случае, Dependabot будет искать зависимости в корневой директории проекта.
+
+# schedule: - определяет расписание для проверки наличия обновлений зависимостей.
+
+# interval: "daily" - указывает, что Dependabot будет проверять наличие обновлений ежедневно.
+
+# allow: - задает условия для применения обновлений.
+
+# - dependency-type: "direct" - указывает, что Dependabot будет обновлять только прямые зависимости проекта.
+
+# - update-type: "minor" и - update-type: "patch" - задают типы обновлений, которые мы разрешаем. 
+# В данном случае, мы разрешаем обновление только до минорной и патчевой версий (например, 1.1.0 или 1.0.1, но не 2.0.0).
