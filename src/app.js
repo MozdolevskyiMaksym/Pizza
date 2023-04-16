@@ -35,11 +35,13 @@ import FacadePattern from './pages/facade-pattern/facade-pattern';
 import DecoratorPattern from './pages/decorator-pattern/decorator-pattern';
 import ChainOfResponsibilityPattern from './pages/chain-of-responsibility-pattern/chain-of-responsibility-pattern';
 import CommandPattern from './pages/command-pattern/command-pattern';
-
-import './app.scss';
 import Agregation from './pages/agregation/agregation';
 import Composition from './pages/composition/composition';
 import DerivedComponent from './pages/inheritance/inheritance';
+import DomPurify from './pages/dom-purify/dom-purify';
+import DependencyVulnerabilityCheck from './pages/dependency-vulnerability-check/dependency-vulnerability-check';
+
+import './app.scss';
 
 const App = () => {
   return (
@@ -96,6 +98,8 @@ const App = () => {
         <Route path="/agregation" element={<Agregation />} />
         <Route path="/composition" element={<Composition />} />
         <Route path="/inheritance" element={<DerivedComponent />} />
+        <Route path="/dom-purify" element={<DomPurify />} />
+        <Route path="/dependency-vulnerability-checker" element={<DependencyVulnerabilityCheck />} />
       </Routes>
     </div>
   );
