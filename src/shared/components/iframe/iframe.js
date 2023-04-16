@@ -13,7 +13,7 @@ const Iframe = ({ title, src }) => {
         title={title}
         src={src}
         frameBorder="0"
-        allowfullscreen
+        allowFullScreen
       ></iframe>
     </div>
   );
