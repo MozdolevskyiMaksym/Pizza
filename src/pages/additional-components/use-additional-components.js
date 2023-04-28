@@ -47,6 +47,7 @@ const useAdditionalComponents = () => {
     { name: 'Shapes', path: 'shapes' },
     { name: 'Custom Event', path: 'custom-event' },
     { name: 'Custom Events', path: 'custom-events' },
+    { name: 'Intl Provider', path: 'intl-provider' },
   ];
 
   if (!Array.prototype.includes) {

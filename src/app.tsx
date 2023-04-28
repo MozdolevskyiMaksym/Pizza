@@ -62,6 +62,7 @@ import RenderPropsUsage from './secondary-pages/render-props-usage/render-props-
 import ImmutabilityExample from './secondary-pages/immutability-example/immutability-example';
 import TimeZoneConverter from './secondary-pages/time-zone-converter/time-zone-converter';
 import DependencyVulnerabilityCheck from './secondary-pages/dependency-vulnerability-check/dependency-vulnerability-check';
+import IntlProviderExample from './secondary-pages/intl-provider/intl-provider';
 
 import './app.scss';
 
@@ -160,6 +161,7 @@ class App extends Component {
             path="/dependency-vulnerability-checker"
             element={<DependencyVulnerabilityCheck />}
           />
+          <Route path="/intl-provider" element={<IntlProviderExample />} />
         </Routes>
       </div>
     );
