@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useMemo } from 'react';
-import { bindActionCreators } from 'redux';
 import { useDispatch } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 const useActions = (actions) => {
   const dispatch = useDispatch();

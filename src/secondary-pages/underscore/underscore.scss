@@ -1,0 +1,21 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.utils-demo {
+  @include centrilized-content-styles;
+  justify-content: space-between;
+  padding: 0 100px;
+  font-family: 'Helvetica Neue', sans-serif;
+
+  .example {
+    margin-bottom: 20px;
+
+    h2 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $secondary-color;
+    }
+  }
+}

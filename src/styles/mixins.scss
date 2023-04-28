@@ -14,3 +14,10 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+
+@mixin centrilized-content-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

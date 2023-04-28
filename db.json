@@ -3,66 +3,66 @@
     {
       "type": "pizza",
       "id": "p1",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Frutti di mare",
       "description": "томат, моцарела, морепродукти, лимон, пармезан",
-      "size": "30",
-      "weight": "350",
+      "size": 30,
+      "weight": 350,
       "price": 200,
       "category": "meat"
     },
     {
       "type": "pizza",
       "id": "p2",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Salmone",
-      "description": "'томат, моцарела, морепродукти, лимон, sadsadasd asd as пармезан',",
-      "size": "35",
-      "weight": "450",
+      "description": "томат, моцарела, морепродукти, пармезан",
+      "size": 35,
+      "weight": 450,
       "price": 220,
       "category": "fish"
     },
     {
       "type": "pizza",
       "id": "p3",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "anasda",
       "description": "томат, моцарела, пармезан",
-      "size": "35",
-      "weight": "450",
+      "size": 35,
+      "weight": 450,
       "price": 220,
       "category": "meat"
     },
     {
       "type": "pizza",
       "id": "p4",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "ZCCcasdd",
       "description": "томат, моцарела, томат, моцарела, пармезан пармезан",
-      "size": "32",
-      "weight": "250",
+      "size": 32,
+      "weight": 250,
       "price": 190,
       "category": "vegetarian"
     },
     {
       "type": "pizza",
       "id": "p5",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "anasda",
       "description": "томат, моцарела, пармезан",
-      "size": "35",
-      "weight": "450",
+      "size": 35,
+      "weight": 450,
       "price": 220,
       "category": "meat"
     },
     {
       "type": "pizza",
       "id": "P6",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "ZCCcasdd",
       "description": "томат, моцарела, томат, моцарела, пармезан пармезан",
-      "size": "32",
-      "weight": "250",
+      "size": 32,
+      "weight": 250,
       "price": 180,
       "category": "vegetarian"
     }
@@ -71,7 +71,7 @@
     {
       "type": "drink",
       "id": "d1",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Cola",
       "volume": "0,5л",
       "price": 25,
@@ -80,7 +80,7 @@
     {
       "type": "drink",
       "id": "d2",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Фанта",
       "volume": "1л",
       "price": 40,
@@ -89,7 +89,7 @@
     {
       "type": "drink",
       "id": "d3",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Rich",
       "volume": "1л",
       "price": 45,
@@ -97,8 +97,8 @@
     },
     {
       "type": "drink",
-      "id": "d1",
-      "img": "887590c4.jpeg",
+      "id": "d4",
+      "imgPath": "887590c4.jpeg",
       "title": "Cola",
       "volume": "0,5л",
       "price": 25,
@@ -106,8 +106,8 @@
     },
     {
       "type": "drink",
-      "id": "d2",
-      "img": "887590c4.jpeg",
+      "id": "d5",
+      "imgPath": "887590c4.jpeg",
       "title": "Фанта",
       "volume": "1л",
       "price": 40,
@@ -115,8 +115,8 @@
     },
     {
       "type": "drink",
-      "id": "d3",
-      "img": "887590c4.jpeg",
+      "id": "d6",
+      "imgPath": "887590c4.jpeg",
       "title": "Rich",
       "volume": "1л",
       "price": 45,
@@ -124,8 +124,8 @@
     },
     {
       "type": "drink",
-      "id": "d1",
-      "img": "887590c4.jpeg",
+      "id": "d7",
+      "imgPath": "887590c4.jpeg",
       "title": "Cola",
       "volume": "0,5л",
       "price": 25,
@@ -133,8 +133,8 @@
     },
     {
       "type": "drink",
-      "id": "d2",
-      "img": "887590c4.jpeg",
+      "id": "d8",
+      "imgPath": "887590c4.jpeg",
       "title": "Фанта",
       "volume": "1л",
       "price": 40,
@@ -142,8 +142,8 @@
     },
     {
       "type": "drink",
-      "id": "d3",
-      "img": "887590c4.jpeg",
+      "id": "d9",
+      "imgPath": "887590c4.jpeg",
       "title": "Rich",
       "volume": "1л",
       "price": 45,
@@ -154,7 +154,7 @@
     {
       "type": "salat",
       "id": "s1",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "З бастурмою",
       "description": "салат Айсберг, бастурма, перець болгарський, помідори чері, фета, горіхи кеш'ю, соус",
       "price": 120
@@ -162,7 +162,7 @@
     {
       "type": "salat",
       "id": "s2",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Аллегро",
       "description": "салат Айсберг, бастурма, перець болгарський, помідори чері, фета, горіхи кеш'ю, соус",
       "price": 110
@@ -170,7 +170,7 @@
     {
       "type": "salat",
       "id": "s3",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "З бастурмою",
       "description": "салат Айсберг, бастурма, перець болгарський, помідори чері, фета, горіхи кеш'ю, соус",
       "price": 120
@@ -178,7 +178,7 @@
     {
       "type": "salat",
       "id": "s4",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Аллегро",
       "description": "салат Айсберг, бастурма, перець болгарський, помідори чері, фета, горіхи кеш'ю, соус",
       "price": 110
@@ -186,34 +186,79 @@
   ],
   "dataBasket": [
     {
-      "type": "pizza",
-      "id": "P6",
-      "img": "887590c4.jpeg",
-      "title": "ZCCcasdd",
-      "description": "томат, моцарела, томат, моцарела, пармезан пармезан",
-      "size": "32",
-      "weight": "250",
-      "price": 180
+      "type": "drink",
+      "id": "d4",
+      "imgPath": "887590c4.jpeg",
+      "title": "Cola",
+      "volume": "0,5л",
+      "price": 25,
+      "category": "Water"
     },
     {
-      "type": "pizza",
-      "id": "p5",
-      "img": "887590c4.jpeg",
-      "title": "anasda",
-      "description": "томат, моцарела, пармезан",
-      "size": "35",
-      "weight": "450",
-      "price": 220
+      "type": "drink",
+      "id": "d9",
+      "imgPath": "887590c4.jpeg",
+      "title": "Rich",
+      "volume": "1л",
+      "price": 45,
+      "category": "Juice"
+    },
+    {
+      "type": "drink",
+      "id": "d5",
+      "imgPath": "887590c4.jpeg",
+      "title": "Фанта",
+      "volume": "1л",
+      "price": 40,
+      "category": "Water"
+    },
+    {
+      "type": "drink",
+      "id": "d8",
+      "imgPath": "887590c4.jpeg",
+      "title": "Фанта",
+      "volume": "1л",
+      "price": 40,
+      "category": "Water"
     },
     {
       "type": "pizza",
       "id": "p2",
-      "img": "887590c4.jpeg",
+      "imgPath": "887590c4.jpeg",
       "title": "Salmone",
-      "description": "'томат, моцарела, морепродукти, лимон, sadsadasd asd as пармезан',",
-      "size": "35",
-      "weight": "450",
-      "price": 220
+      "description": "томат, моцарела, морепродукти, пармезан",
+      "size": 35,
+      "weight": 450,
+      "price": 220,
+      "category": "fish"
+    },
+    {
+      "type": "pizza",
+      "id": "p3",
+      "imgPath": "887590c4.jpeg",
+      "title": "anasda",
+      "description": "томат, моцарела, пармезан",
+      "size": 35,
+      "weight": 450,
+      "price": 220,
+      "category": "meat"
+    }
+  ],
+  "dataDiscounts": [
+    {
+      "id": 1,
+      "imgPath": "887590c4.jpeg",
+      "title": "Акція діє з пн.-нд."
+    },
+    {
+      "id": 2,
+      "imgPath": "887590c4.jpeg",
+      "title": "Акція діє з пн.-нд."
+    },
+    {
+      "id": 3,
+      "imgPath": "887590c4.jpeg",
+      "title": "Акція діє з пн.-нд."
     }
   ]
 }

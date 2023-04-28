@@ -1,0 +1,53 @@
+.alert-item {
+  position: relative;
+  padding: 1.5rem;
+  padding-right: 1.7rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #badbcc;
+  border-radius: 0.25rem;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0f5132;
+  background-color: #d1e7dd;
+  transition: 2s all ease;
+
+  &__close-icon {
+    position: absolute;
+    right: 22px;
+    top: 10px;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      height: 15px;
+      width: 2px;
+      background: #0f5132;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 6px;
+    }
+    &:after {
+      content: '';
+      height: 2px;
+      width: 15px;
+      background: #0f5132;
+      transform: rotate(-135deg);
+      position: absolute;
+      left: -1px;
+      top: 6px;
+    }
+  }
+  &.error {
+    background: #ed7367;
+    color: #2f0a02;
+    border: 1px solid #2f0a02;
+    .remove-alert {
+      &:before {
+        background: #2f0a02;
+      }
+      &:after {
+        background: #2f0a02;
+      }
+    }
+  }
+}

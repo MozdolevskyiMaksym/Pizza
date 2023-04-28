@@ -109,15 +109,17 @@ class IndexedDBStorage {
       const request = window.indexedDB.open(this.dbName);
 
       request.onerror = () => {
-        reject(Error('Failed to open database.'));
+        reject(Error('Failed to open database.')); // Если база данных не удалось открыть или создать, метод выдает ошибку.
       };
 
       request.onsuccess = () => {
+        // Если база данных существует, метод устанавливает свойство db равным результату запроса на открытие базы данных
         this.db = request.result;
         resolve();
       };
 
       request.onupgradeneeded = (event) => {
+        // иначе создает новую базу данных и устанавливает свойство db равным результату запроса на создание базы данных
         this.db = event.target.result;
 
         // создание хранилища объектов
@@ -133,14 +135,14 @@ class IndexedDBStorage {
   // метод для добавления данных в хранилище
   addToStore(data) {
     return new Promise((resolve, reject) => {
-      const transaction = this.db.transaction([this.storeName], 'readwrite');
-      const objectStore = transaction.objectStore(this.storeName);
+      const transaction = this.db.transaction([this.storeName], 'readwrite'); // открывает транзакцию на чтение/запись данных
+      const objectStore = transaction.objectStore(this.storeName); // создает хранилище объектов
 
       // добавление данных в хранилище
-      const request = objectStore.add(data);
+      const request = objectStore.add(data); // добавляет данные в хранилище
 
       request.onerror = () => {
-        reject(Error('Failed to add data to store.'));
+        reject(Error('Failed to add data to store.')); // Если данные не удалось добавить в хранилище, метод выдает ошибку.
       };
 
       request.onsuccess = () => {
@@ -151,19 +153,21 @@ class IndexedDBStorage {
 
   // метод для поиска данных в хранилище по имени
   searchByName(name) {
+    // осуществляет поиск данных в хранилище объектов по имени. Имя передается в качестве параметра name
     return new Promise((resolve, reject) => {
-      const transaction = this.db.transaction([this.storeName], 'readonly');
-      const objectStore = transaction.objectStore(this.storeName);
-      const index = objectStore.index('name');
+      const transaction = this.db.transaction([this.storeName], 'readonly'); // открывает транзакцию на чтение данных
+      const objectStore = transaction.objectStore(this.storeName); // получает объектное хранилище
+      const index = objectStore.index('name'); // создает индекс для поиска по имени
 
       // поиск данных по имени
-      const request = index.getAll(name);
+      const request = index.getAll(name); // Затем метод ищет все данные в хранилище, у которых значение поля name соответствует переданному параметру name
 
       request.onerror = () => {
         reject(Error('Failed to search data by name.'));
       };
 
       request.onsuccess = () => {
+        // Если поиск прошел успешно, метод возвращает найденные данные.
         resolve(request.result);
       };
     });

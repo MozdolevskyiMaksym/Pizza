@@ -1,0 +1,5 @@
+@import '../../styles/mixins';
+
+.image-uploader-2 {
+  @include centrilized-content-styles;
+}
