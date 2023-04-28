@@ -82,8 +82,8 @@ function* fetchBasketWatcher() {
   yield takeEvery(FETCH_PRODUCT_ITEMS, fetchBasketWorker);
 }
 
-function* deleteProductFromBasketWorker(dataDeleteProduct) {
-  const productId = dataDeleteProduct.payload.product.id;
+function* deleteProductFromBasketWorker(data) {
+  const productId = data?.payload?.product?.id;
   try {
     yield call(ApiService.remove, `dataBasket/${productId}`);
     yield put({

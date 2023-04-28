@@ -17,6 +17,7 @@ const useAdditionalComponents = () => {
     { name: 'Responsive Form', path: 'contacts' },
     { name: 'Iframe usage', path: 'iframe' },
     { name: 'Time zone converter', path: 'time-zone-converter' },
+    { name: 'Form', path: 'form' },
     { name: 'Formik - sanitizing data', path: 'formik-sanitizing-data' },
     { name: 'IndexDB Tool', path: 'index-db-tool' },
     { name: 'Storage Tools', path: 'storage-tools' },
@@ -41,6 +42,11 @@ const useAdditionalComponents = () => {
     { name: 'Inheritance', path: 'inheritance' },
     { name: 'DomPurify', path: 'dom-purify' },
     // { name: 'Dependency Vulnerability Checker', path: 'dependency-vulnerability-checker' },
+    { name: 'Class component', path: 'class-component' },
+    { name: 'Cars', path: 'cars' },
+    { name: 'Shapes', path: 'shapes' },
+    { name: 'Custom Event', path: 'custom-event' },
+    { name: 'Custom Events', path: 'custom-events' },
   ];
 
   if (!Array.prototype.includes) {

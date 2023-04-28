@@ -1,0 +1,85 @@
+.pizza-details {
+  padding: 120px 0 30px;
+}
+
+.pizza-detail-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 15px;
+}
+
+.pizza-detail-photo {
+  padding-right: 30px;
+  img {
+    height: 490px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    object-fit: cover;
+  }
+}
+
+.pizza-detail-info {
+  .pizza-detail-name {
+    font-family: 'Montserrat', serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--black);
+    font-weight: 600;
+  }
+  .pizza-detail-desc {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0;
+  }
+  .pizza-detail-properties {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    &__text {
+      display: flex;
+      color: #000000;
+      opacity: 0.54;
+      font-size: 18px;
+      line-height: 20px;
+      position: relative;
+      margin-right: 10px;
+    }
+  }
+  .pizza-detail-properties-price {
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-right: 35px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    span {
+      font-size: 24px;
+    }
+  }
+}
+
+.product-also {
+  margin-top: 60px;
+  padding: 0 15px;
+  &__title {
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .swiper {
+    padding: 0 30px;
+
+    .swiper-slide {
+      .product-item {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

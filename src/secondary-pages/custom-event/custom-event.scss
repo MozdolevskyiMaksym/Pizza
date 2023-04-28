@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+
+.custom-event {
+  @include centrilized-content-styles;
+
+  p {
+    margin: 0 10px;
+  }
+}

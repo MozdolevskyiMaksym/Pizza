@@ -1,0 +1,126 @@
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  &.modal-open {
+    display: flex;
+  }
+  .overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    z-index: 101;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.55);
+  }
+  .close-btn {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    &:before {
+      content: '';
+      background: var(--black);
+      height: 20px;
+      width: 3px;
+      position: absolute;
+      left: 9px;
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &:after {
+      content: '';
+      background: var(--black);
+      height: 20px;
+      width: 3px;
+      position: absolute;
+      right: 8px;
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+  .modal-form {
+    width: 100%;
+    max-width: 630px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 50px 50px 80px;
+    position: relative;
+    z-index: 102;
+    h3 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    .register {
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 24px;
+      .link {
+        color: var(--green);
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .label {
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 18px;
+      display: block;
+    }
+    .form-login-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        display: block;
+        text-decoration: underline;
+        color: var(--green);
+        cursor: pointer;
+      }
+      .save-data {
+        .checkbox-container {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+#modal-login {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+#modal-register {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+#modal-reset {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

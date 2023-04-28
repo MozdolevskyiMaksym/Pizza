@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 import axios from 'axios';
 import 'regenerator-runtime/runtime';
 import { BASE_URL } from './config.js';
@@ -57,11 +58,17 @@ class ApiService {
     ApiService.sendRequest(`${BASE_URL}${url}`, 'PATCH', data);
 }
 
+// XMLHttpRequest;
 // export class ApiService {
 //   static sendRequest = (url, method, data = null, headers = {}) => {
 //     return new Promise((resolve, reject) => {
 //       const xhr = new XMLHttpRequest();
 //       xhr.open(method, url);
+//       xhr.timeout = 5000;
+//       xhr.ontimeout = () => {
+//         console.log('запрос был отменен из-за превышения времени ожидания');
+//         xhr.abort();                                                                  // cancel request (прерывает отправленный запрос)
+//       };
 //       xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
 //       Object.keys(headers).forEach((key) => {
 //         xhr.setRequestHeader(key, headers[key]);
@@ -81,6 +88,38 @@ class ApiService {
 //       xhr.onerror = () => reject(xhr);
 //       xhr.send(JSON.stringify(data));
 //     });
+//   };
+
+//   static load = (url, data) =>
+//     ApiService.sendRequest(`${BASE_URL}${url}`, 'GET', data);
+
+//   static create = (url, data) =>
+//     ApiService.sendRequest(`${BASE_URL}${url}`, 'POST', data);
+
+//   static update = (url, data) =>
+//     ApiService.sendRequest(`${BASE_URL}${url}`, 'PUT', data);
+
+//   static remove = (url, data) =>
+//     ApiService.sendRequest(`${BASE_URL}${url}`, 'DELETE', data);
+
+//   static reactivate = (url, data) =>
+//     ApiService.sendRequest(`${BASE_URL}${url}`, 'PATCH', data);
+// }
+
+// FETCH
+// export class ApiService {
+//   static sendRequest = async (url, method, data = null, headers = {}) => {
+//     const response = await fetch(url, {
+//       method,
+//       body: data ? JSON.stringify(data) : null,
+//       headers: { 'Content-Type': 'application/json', ...headers },
+//     });
+
+//     if (!(response.status >= 200 && response.status < 300)) {
+//       throw response;
+//     }
+
+//     return response.json();
 //   };
 
 //   static load = (url, data) =>

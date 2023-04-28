@@ -1,0 +1,20 @@
+button {
+  background-color: #4caf50; /* Зеленый цвет кнопки */
+  border: none;
+  color: white; /* Цвет текста на кнопке */
+  padding: 10px 20px; /* Размер отступов внутри кнопки */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer; /* Заменяем стандартный курсор на стрелочку */
+}
+
+button:hover {
+  background-color: #3e8e41; /* Изменяем цвет кнопки при наведении */
+}
+
+button:active {
+  background-color: #4caf50; /* Изменяем цвет кнопки при нажатии */
+}

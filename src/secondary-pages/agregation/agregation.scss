@@ -1,0 +1,53 @@
+@import '../../styles/mixins';
+
+.agregation {
+  @include centrilized-content-styles;
+  flex-direction: column;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #1976d2;
+    }
+  }
+
+  .animate__animated {
+    &.animate__bounceIn {
+      animation-duration: 0.5s;
+    }
+
+    &.animate__bounceOut {
+      animation-duration: 0.5s;
+    }
+  }
+
+  .animate__backInDown {
+    animation-duration: 0.2s;
+  }
+
+  .animate__backOutDown {
+    animation-duration: 0.2s;
+  }
+}

@@ -1,0 +1,5 @@
+@import '../../styles/mixins';
+
+.portal-usage {
+  @include centrilized-content-styles;
+}

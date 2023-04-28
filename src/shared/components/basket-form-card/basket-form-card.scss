@@ -1,0 +1,65 @@
+.basket-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0 0 20px;
+  margin-bottom: 20px;
+  a {
+    margin-right: 15px;
+  }
+  img {
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .product-info {
+    width: 190px;
+    margin-right: 20px;
+    &__name {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    &__description {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(36, 28, 21, 0.54);
+      margin-top: 10px;
+    }
+  }
+  .counts {
+    margin-bottom: 15px;
+    label {
+      font-size: 12px;
+      display: block;
+    }
+    select {
+      width: 100%;
+      max-width: 50px;
+    }
+  }
+  .product-price-info {
+    text-align: right;
+    .product-price {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 20px;
+      display: flex;
+    }
+    .remove-item {
+      cursor: pointer;
+      color: rgba(36, 28, 21, 0.54);
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      display: block;
+      text-decoration-line: underline;
+    }
+  }
+}

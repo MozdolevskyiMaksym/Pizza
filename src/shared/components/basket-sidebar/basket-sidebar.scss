@@ -1,0 +1,52 @@
+.basket-sidebar {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  top: 91px;
+  z-index: 101;
+  position: fixed;
+
+  &.sidebar-open {
+    display: block;
+
+    .basket-sidebar__content {
+      right: 0;
+    }
+  }
+
+  &__overlay {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  &__content {
+    position: fixed;
+    top: 90px;
+    right: -110%;
+    padding: 30px 45px;
+    width: 530px;
+    height: 84vh;
+    box-shadow: -4px 0px 18px rgb(0 0 0 / 25%);
+    background-color: #fff;
+    transition: 0.3s all ease;
+    z-index: 102;
+
+    &::-webkit-scrollbar {
+      width: 10px; /* Ширина скроллбара */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc; /* Цвет скроллбара */
+      border-radius: 5px; /* Скругление углов скроллбара */
+    }
+
+    &-heading {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      line-height: 28px;
+      border-bottom: 1px solid rgba(36, 28, 21, 0.17);
+      font-size: 36px;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+}
